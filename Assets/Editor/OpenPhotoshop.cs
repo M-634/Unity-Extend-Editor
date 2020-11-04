@@ -6,7 +6,7 @@ using System.IO;
 using System.Diagnostics;
 using System;
 
-public class OpenPhotoshop : MonoBehaviour
+public class OpenPhotoshop : Editor
 {
     const string ItemName = "Assets/Open in Photoshop";
 

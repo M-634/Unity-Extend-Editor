@@ -9,7 +9,7 @@ using UnityEditor;//拡張エディターを作成するのに必要
 /// <summary>
 /// デザイナーさん用のフォルダーを作成するクラス
 /// </summary>
-public class CreateGraphicsFolders
+public class CreateGraphicsFolders : Editor
 {
     static int m_customFolerNumber = 0;
 
@@ -47,5 +47,8 @@ public class CreateGraphicsFolders
             Directory.CreateDirectory(path);
         }
         //Debug.Log("実行されてるよ");
+#if UNITY_EDITOR
+        AssetDatabase.Refresh();
+#endif
     }
 }

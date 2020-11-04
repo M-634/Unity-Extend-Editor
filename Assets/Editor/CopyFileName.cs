@@ -5,7 +5,7 @@ using UnityEditor;
 using System.Linq;
 using System.IO;
 
-public class CopyFileName : MonoBehaviour
+public class CopyFileName : Editor
 {
     [MenuItem("Assets/Copy FileName", false)]
     static void Execute()
